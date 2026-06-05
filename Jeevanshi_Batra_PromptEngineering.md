@@ -546,7 +546,118 @@ For responsible use, users should verify important facts from reliable sources b
 
 
 
+# Part 1: Prompt Design & Iteration
 
+## 1.1 Three Content Generation Tasks
+
+# Scenario A: Technical Explanation
+
+### Initial Prompt (V1)
+
+Explain blockchain.
+
+### Refined Prompt (V2)
+
+Explain blockchain in simple language for a 10-year-old child.
+
+### Final Prompt (V3)
+
+You are an expert elementary school teacher. Explain blockchain to a 10-year-old child using simple words, a real-life analogy, and an example. Avoid technical jargon and keep the explanation under 150 words.
+
+### Final Output
+
+Blockchain is like a shared notebook that many people can see. Imagine a class notebook where every student writes down important information. Once something is written, nobody can erase it without everyone noticing.
+
+Each page of the notebook is called a block. When a page is full, it is connected to the previous page, creating a chain of blocks, or a blockchain.
+
+For example, if students use the notebook to record who borrowed a book, everyone can see the record and know it is trustworthy. This makes blockchain a safe way to store information.
+
+---
+
+# Scenario B: Professional Email
+
+### Initial Prompt (V1)
+
+Write an email declining a job offer.
+
+### Refined Prompt (V2)
+
+Write a polite email declining a job offer while thanking the company for the opportunity.
+
+### Final Prompt (V3)
+
+You are a professional HR communication specialist. Write a polite and professional email declining a job offer because another opportunity was accepted. Express gratitude, maintain a positive relationship, and mention interest in future opportunities with the company.
+
+### Final Output
+
+Subject: Thank You for the Opportunity
+
+Dear Hiring Manager,
+
+Thank you very much for offering me the position at your company. I truly appreciate the time and effort invested in the interview process and the confidence you showed in my abilities.
+
+After careful consideration, I have decided to accept another opportunity that aligns more closely with my current career goals. Therefore, I must respectfully decline your offer.
+
+I am grateful for the opportunity to learn more about your organization and was impressed by the team and company culture. I hope our paths may cross again in the future, and I would welcome the chance to be considered for future opportunities.
+
+Thank you once again for your understanding, and I wish your team continued success.
+
+Sincerely,
+[Your Name]
+
+---
+
+# Scenario C: Creative Content
+
+### Initial Prompt (V1)
+
+Create a tagline for an eco-friendly water bottle.
+
+### Refined Prompt (V2)
+
+Create a catchy and memorable tagline for an eco-friendly water bottle brand.
+
+### Final Prompt (V3)
+
+You are a professional copywriter creating a slogan for a modern eco-friendly water bottle brand targeting environmentally conscious young adults. Generate a short, memorable, and inspiring tagline that highlights sustainability and hydration.
+
+### Final Output
+
+"Hydrate Today. Protect Tomorrow."
+
+---
+
+## 1.2 Iteration Documentation
+
+### Scenario A
+
+| Version | Prompt | What Changed | Why This Improved the Output |
+|----------|---------|-------------|-----------------------------|
+| V1 | Explain blockchain. | N/A | N/A |
+| V2 | Explain blockchain in simple language for a 10-year-old child. | Added audience specification. | Made explanation easier to understand. |
+| V3 | You are an expert elementary school teacher. Explain blockchain to a 10-year-old child using simple words, a real-life analogy, and an example. Avoid technical jargon and keep the explanation under 150 words. | Added role, context, analogy, and length constraints. | Produced a clearer and more engaging explanation. |
+
+### Scenario B
+
+| Version | Prompt | What Changed | Why This Improved the Output |
+|----------|---------|-------------|-----------------------------|
+| V1 | Write an email declining a job offer. | N/A | N/A |
+| V2 | Write a polite email declining a job offer while thanking the company for the opportunity. | Added politeness and gratitude. | Created a more professional tone. |
+| V3 | You are a professional HR communication specialist. Write a polite and professional email declining a job offer because another opportunity was accepted. Express gratitude, maintain a positive relationship, and mention interest in future opportunities with the company. | Added role and detailed context. | Resulted in a complete and professional email. |
+
+### Scenario C
+
+| Version | Prompt | What Changed | Why This Improved the Output |
+|----------|---------|-------------|-----------------------------|
+| V1 | Create a tagline for an eco-friendly water bottle. | N/A | N/A |
+| V2 | Create a catchy and memorable tagline for an eco-friendly water bottle brand. | Added style requirements. | Generated more creative ideas. |
+| V3 | You are a professional copywriter creating a slogan for a modern eco-friendly water bottle brand targeting environmentally conscious young adults. Generate a short, memorable, and inspiring tagline that highlights sustainability and hydration. | Added role, audience, and brand context. | Produced a stronger and more targeted marketing tagline. |
+
+---
+
+## 1.3 Role and Context Usage
+
+Adding role assignment improved the quality of responses by making the model respond from a specific professional perspective. For example, assigning the role of an elementary school teacher produced a child-friendly explanation of blockchain, while assigning the role of an HR communication specialist generated a more professional email. Context setting helped define the target audience, purpose, tone, and constraints of each task. Together, role and context made the outputs more relevant, accurate, and aligned with the intended goals.
 
 
 
